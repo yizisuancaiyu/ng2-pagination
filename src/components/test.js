@@ -16,8 +16,8 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n    <input placeholder=\"\u603B\u9875\u6570\" value=\"\" />\n    <input placeholder=\"\u6BCF\u9875\u6570\u76EE\" value=\"\" />\n\n\n    <h1>{{title}}</h1>\n    <h2>My favorite hero is: {{myHero}}</h2>\n    "
+        template: "\n    <h1>{{title}}</h1>\n    <h2>My favorite hero is: {{myHero}}</h2>\n    "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=test.js.map
