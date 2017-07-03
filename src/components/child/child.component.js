@@ -9,19 +9,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
-        this.currPage = 1;
-        this.page = 1;
+var ChildComponent = (function () {
+    function ChildComponent() {
     }
-    return AppComponent;
+    ChildComponent.prototype.ngOnInit = function () {
+    };
+    ChildComponent.prototype.ngOnChanges = function (changes) {
+        console.log(JSON.stringify(changes, null, 3));
+    };
+    return ChildComponent;
 }());
-AppComponent = __decorate([
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], ChildComponent.prototype, "page", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", Object)
+], ChildComponent.prototype, "currPage", void 0);
+ChildComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        templateUrl: '/app/app.html'
+        selector: 'app-child',
+        templateUrl: './child.component.html',
+        styleUrls: ['./child.component.css']
     }),
     __metadata("design:paramtypes", [])
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], ChildComponent);
+exports.ChildComponent = ChildComponent;
+//# sourceMappingURL=child.component.js.map

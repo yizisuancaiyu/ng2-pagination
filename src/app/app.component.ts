@@ -1,23 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `
-    <input placeholder="总页数" value="" />
-    <input placeholder="每页数目" value="" />
-
-
-    <h1>{{title}}</h1>
-    <h2>My favorite hero is: {{myHero}}</h2>
-    `
+  templateUrl: '/app/app.html'
 })
 
 export class AppComponent {
 
+  currPage: any = 1;
+  page: any = 1;
 
-  title = 'Tour of Heroes';
-  myHero = 'Windstorm';
 
+  constructor() {
+    
+  }
 
-  
 }
